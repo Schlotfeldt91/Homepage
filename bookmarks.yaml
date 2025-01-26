@@ -1,0 +1,35 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/bookmarks
+
+- Links:
+    - YouTube:
+        - icon: youtube
+          href: https://youtube.com/
+    - Github:
+        - icon: github
+          href: #GitHub link
+    - Discord:
+        - icon: discord
+          href: #Discord link
+    - Shelly Cloud:
+        - icon: shelly
+          href: https://control.shelly.cloud/
+    - Unifi Site Manager:
+        - icon: unifi
+          href: https://unifi.ui.com/
+    - Unifi Software Download:
+        - icon: unifi
+          href: https://www.ui.com/download/releases/network-server
+    - Unifi archived Software download:
+        - icon: unifi
+          href: http://archive.shelly-tools.de/
+    - Twingate:
+        - icon: twingate
+          href: #Link to your Twingate URL
+    - Cloudflare:
+        - icon: cloudflare
+          href: https://dash.cloudflare.com/login/
+
+
+

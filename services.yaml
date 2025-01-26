@@ -1,0 +1,84 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services/
+
+- Network:
+    - UniFi Controller:
+        icon: unifi.svg
+        href: "{{HOMEPAGE_VAR_UNIFI_NETWORK_URL}}"
+        description: UniFi Network KHS
+        siteMonitor: "{{HOMEPAGE_VAR_UNIFI_NETWORK_URL}}"
+        widget:
+            type: unifi
+            url: "{{HOMEPAGE_VAR_UNIFI_NETWORK_URL}}"
+            username:  "{{HOMEPAGE_VAR_UNIFI_NETWORK_USERNAME}}"
+            password:  "{{HOMEPAGE_VAR_UNIFI_NETWORK_PASSWORD}}"
+            #site: UniFi Network KHS
+
+    - Uptime Kuma:
+        icon: uptime-kuma.svg
+        href: "{{HOMEPAGE_VAR_UPTIME_KUMA_URL}}"
+        description: uptime på mine enheder og services
+        siteMonitor: "{{HOMEPAGE_VAR_UPTIME_KUMA_URL}}"
+        widget:
+            type: uptimekuma
+            url: "{{HOMEPAGE_VAR_UPTIME_KUMA_URL}}"
+            slug: homepage
+
+    - Nginx Proxy Manager:
+        icon: nginx-proxy-manager.svg
+        href: "{{HOMEPAGE_VAR_NGINX_URL}}"
+        Description: Sørger for mine sider er med SSL
+        siteMonitor: "{{HOMEPAGE_VAR_NGINX_URL}}"
+        widget:
+            type: npm
+            url: "{{HOMEPAGE_VAR_NGINX_URL}}"
+            username: "{{HOMEPAGE_VAR_NGINX_USER}}"
+            password: "{{HOMEPAGE_VAR_NGINX_PASS}}"
+
+#    - Pi-Hole:
+#        icon: pi-hole.svg
+#        href: "{{HOMEPAGE_VAR_PIHOLE_URL_1}}"
+#        description: Home DNS
+#        widget:
+#            type: pihole
+#            url: "{{HOMEPAGE_VAR_PIHOLE_URL_1}}"
+#            key: "{{HOMEPAGE_VAR_PIHOLE_API_KEY_1}}"
+
+
+
+
+- Virtuel Environment:
+    - Proxmox:
+        icon: proxmox.svg
+        href: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+        description: pve
+        siteMonitor: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+        widget:
+            type: proxmox
+            url: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+            username:  "{{HOMEPAGE_VAR_PROXMOX_USER}}"
+            password:  "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"
+            node: pve
+
+- Services:
+    - Immich:
+        icon: immich.png
+        href: "{{HOMEPAGE_VAR_IMMICH_URL}}"
+        description: Immich
+        siteMonitor: "{{HOMEPAGE_VAR_IMMICH_URL}}"
+        widget:
+            type: immich
+            url: "{{HOMEPAGE_VAR_IMMICH_URL}}"
+            key: "{{HOMEPAGE_VAR_IMMICH_KEY}}"
+            version: 2
+
+    - Netbox:
+        icon: netbox-dark.svg
+        href: "{{HOMEPAGE_VAR_NETBOX_URL}}"
+        description: dokumentation over IT stuff
+        siteMonitor: "{{HOMEPAGE_VAR_NETBOX_URL}}"
+        #widget:
+            #type: netbox
+            #url: "{{HOMEPAGE_VAR_NETBOX_URL}}"
+            #key: "{{HOMEPAGE_VAR_NETBOX_API}}"
